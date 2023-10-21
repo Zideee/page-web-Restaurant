@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quartier Lointain</title>
+<link rel="stylesheet" href="assets/restaurant.css">    
+    </head>
+<body>
+    <form action="Evénements.html" method="post">
+        <div>
+            <p>Vous êtes vous tromper de réservation ?</p>
+            <input type="image" alt="Cliquez ici !" src="images/nagisa.png" width="50" height="90">
+        </div>
+        <div>
+        <p>Nombre de personne(s) <select id="simple" name="simple">
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option select>5</option>
+  <option>6</option>
+  <option>7</option>
+  <option>8</option>
+  <option>9</option>
+  <option>10</option>
+           
+            </select></p>
+        </div>
+        <div>
+        <label for="time">Horaires :</label>
+        <input type="time" id="time" name="time" multiple>
+    </div>
+        <div>
+        <label for="date">Date :</label>
+        <input type="date" id="date" name="date" min="2022-12-15" max="2023-12-31" step="1" multiple>
+    </div>
+    <div>
+        <label for="prenom">Prénom* :</label>
+        <input type="text" id="prenom" name="prenom" multiple>
+    </div>
+        <div>
+          <label for="nom">Nom* :</label>
+        <input type="text" id="nom" name="nom" multiple>
+    </div>
+    <div>
+        <label for="mail">Email* :</label>
+        <input type="email" id="email" name="email" multiple>
+    </div>
+        <div>
+        <label for="tel">Téléphone :</label>
+        <input type="tel" id="tel" name="tel" multiple>
+    </div>
+        <div>
+           <label for="msg">Détails :</label>
+    <textarea id="msg" name="message"></textarea>
+  </div>
+   
+</form>
+<form action="Accueil.html" method="post">
+    <fieldset>
+    <legend>Carte bancaire</legend>
+    <div>
+    <p>Titulaire de la carte</p>
+        <input type="text" name="titulaire" id="titulaire" required>
+    </div>
+    <div> 
+    <p>Numéro de la carte</p>
+       <input type="text" name="num" id="num" required> 
+    </div>
+        <div>
+            <p>Date de validité</p>
+            <input type="text" name="valid" id="valid" value="05/ " required>
+        </div>
+             <div>
+            <p>Cryptogramme visuel</p>
+            <input type="text" name="valid" id="valid" placeholder="***" required>
+            </div>
+    
+    
+    <div class="button">
+        <button type="submit">Réserver</button>
+    </div>
+   
+    </fieldset>
+    </form>
+    <nav>
+        <a href='Accueil.html'>Retour à l'accueil</a>
+        </nav>
+      </body>
+</html>
